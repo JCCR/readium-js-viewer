@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Minimal Reader</title>
+        <script data-main="loader.js" src="../lib/require.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="readium.css">
+        <style>
+            #page-buttons {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                z-index: 100;
+            }
+
+            #page-buttons button {
+                height: 40px;
+                width: 200px;
+                opacity: 0.75;
+            }
+
+            #readium-container1 {
+              position: absolute;
+                width: 33.3333%;
+                height: 100%;
+                left: 0;
+            }
+            #readium-container2 {
+              position: absolute;
+                left: 33.3333%;
+                width: 33.3333%;
+                height: 100%;
+            }
+            #readium-container3 {
+              position: absolute;
+                left: 66.6666%;
+                width: 33.3333%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="readium-container1"></div>
+        <div id="readium-container2"></div>
+        <div id="readium-container3"></div>
+    </body>
+</html>

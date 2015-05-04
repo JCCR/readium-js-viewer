@@ -1,0 +1,12 @@
+/* classes here are highlight types */
+.highlight {
+    position: absolute;
+    opacity: 0.2;
+    background-color: #ffce00;
+}
+/* hover- prefix on type for when on mouse over */
+.hover-highlight {
+    position: absolute;
+    opacity: 0.4;
+    background-color: #ff8900;
+}

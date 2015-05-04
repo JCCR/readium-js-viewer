@@ -1,0 +1,45 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    -webkit-box-sizing: border-box; /* Safari */
+}
+
+.book-frame {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.book-frame iframe {
+    border-width: 0;
+}
+
+/* Fixed layout */
+.fixed-page-frame,
+.fixed-page-frame-left,
+.fixed-page-frame-right,
+.fixed-page-frame-center {
+    position: absolute !important;
+}
+.iframe-fixed {
+    width: 100%;
+    height: 100%;
+}
+
+/* Reflowable layout*/
+.reflowable-content-frame {
+    position: absolute !important;
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+}
