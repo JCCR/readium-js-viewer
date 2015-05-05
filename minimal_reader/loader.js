@@ -104,6 +104,8 @@ require(['Readium'], function (Readium) {
                 });
             });
         });
+
+        window.r3 = readiumCubed;
     });
 
 });
