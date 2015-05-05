@@ -106,6 +106,27 @@ require(['Readium'], function (Readium) {
         });
 
         window.r3 = readiumCubed;
+        r3.openPageRight = function () {
+            readium1.reader.openPageRight();
+            readium2.reader.openPageRight();
+            readium3.reader.openPageRight();
+            //r3.reader.call('openPageRight');
+        };
+
+        r3.openPageLeft = function () {
+            readium1.reader.openPageLeft();
+            readium2.reader.openPageLeft();
+            readium3.reader.openPageLeft();
+            //r3.reader.call('openPageLeft');
+        };
+
+
+        $('#left').on('click', function () {
+            r3.openPageLeft();
+        });
+        $('#right').on('click', function () {
+            r3.openPageRight();
+        });
     });
 
 });
